@@ -129,7 +129,7 @@ p{
 }
 
 /* attribution styles */
-.attribution { font-size: 11px; text-align: center; color: var(--color-text);}
+.attribution { margin-top:20px; font-size: 11px; text-align: center; color: var(--color-text);}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
