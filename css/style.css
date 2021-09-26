@@ -24,6 +24,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 /* utility classes */
 .uppercase{
@@ -36,16 +37,18 @@ body{
 /* card syles goes here */
 .card{
     background-color: var(--color-card-bg);
-    border-radius: 20px;
+    border-radius: 15px;
     max-width: 509px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .image{
     background-color:rgb(53, 2, 85); 
 }
 img{
     max-width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     opacity: 0.5;
 }
 ul{
@@ -82,15 +85,52 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+/* styles for desktop */
+@media (min-width: 1440px) {
+    .card{
+        flex-direction: row;
+        max-width: 1000px;
+        padding-bottom: 0;
+    }
+    .image{
+        order:2;
+        width: 100%;
+    }
+    .main-content{
+        padding:40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img{
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+    }
+    .title{
+        text-align: left;
+        padding: 0;
+        margin-top: 0;
+    }
+    p{
+        text-align: left;
+        padding: 0;
+        
+    }
+    .stats{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+    .stats li{
+        text-align: left;
+    }
     
 }
 
-
-
-
-
-
-
+/* attribution styles */
+.attribution { font-size: 11px; text-align: center; color: var(--color-text);}
+.attribution a { color: hsl(228, 45%, 44%); }
 
 
 
